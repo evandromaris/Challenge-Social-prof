@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: auto;
+    padding: 0%;
+
+}
+
+body{
+    font-size: 15px;   
+    max-width: 1440px;
+    font-family: 'League Spartan', sans-serif;
+    background: url("images/bg-pattern-top-desktop.svg") no-repeat, url("images/bg-pattern-bottom-desktop.svg") bottom right no-repeat;
+    
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.top .title h1{
+    font-weight: 700;
+    font-size: 50px;
+    color: hsl(300, 43%, 22%);
+   
+}
+
+.top .title p{
+    padding-top: 10px;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+    line-height: 1.2;
+
+}
+
+.top .stars .reviews, .guru, .besttech{
+    width: 445px;
+    height: 55px;
+    background-color: hsl(300, 24%, 96%);
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.top .stars .reviews{
+   display: flex;
+   position: relative;
+   right: 110px;
+   
+}
+
+.top .stars .reviews img{
+    margin-left: 5px;
+    position: relative;
+    right: 15px;
+   
+
+}
+
+.top .stars .reviews p{
+    position: relative;
+    right: 60px;
+}
+
+.top .stars .guru{
+    display: flex;
+    position: relative;
+    right: 60px;
+    
+ }
+ 
+ .top .stars .guru img{
+    margin-left: 5px;
+    position: relative;
+    right: 15px; 
+ 
+ }
+ 
+ .top .stars .guru p{
+    position: relative;
+    right: 50px;
+ }
+ 
+.top .stars .besttech{
+    display: flex;
+    position: relative;
+    right: 10px;
+ }
+ 
+.top .stars .besttech img{
+    margin-left: 5px;
+    position: relative;
+    right: 15px;
+     
+ 
+ }
+ 
+.top .stars .besttech p{
+    position: relative;
+    right: 70px;
+ }
+
+.box-comment{
+    display: flex;
+    position: relative;
+    padding: 80px 150px 150px 145px;
+    justify-content: center;
+ }
+
+ 
+.box-comment .box1, .box2, .box3{
+    background-color:  hsl(300, 43%, 22%);
+    width: 350px;
+    height: 235px;
+    border-radius: 10px;
+    
+ }
+
+ /*inicio do comentario no box*/
+
+.box-comment .perfil{
+    margin-top: 40px;
+    margin-left: 30px;
+    
+}
+
+.box-comment .perfil img{
+    width: 40px;
+    border-radius: 100%;
+
+}
+
+.box-comment .perfil p {
+    bottom: 40px;
+    left: 65px;
+    position: relative;
+    line-height: 1.2;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+.box-comment .perfil a{
+    color: hsl(333, 80%, 67%);
+    font-weight: 300;
+    bottom: 40px;
+    left: 65px;
+    position: relative;
+    line-height: 1.2;
+    text-decoration: none;
+    
+}
+
+.box-comment  .text{
+    color: hsl(0, 0%, 100%);
+    line-height: 1.4;
+    margin-left: 30px;
+}
+
+.box-comment .box2 {
+    top: 20px;
+    position: relative;
+    
+}
+
+.box-comment .box3 {
+    top: 40px;
+    position: relative;
+    
+}
+
+.rodape {
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+
+.rodape a {
+    color: hsl(300, 43%, 22%);
+    text-decoration: none;
+}
+
+.rodape a:hover{
+    color: hsl(333, 80%, 67%);
+}
+
+@media (max-width: 1170px){
+    .box-comment{
+        flex-direction: column;
+    }
+  
+}
+
+@media (max-width: 970px){
+    .top{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .stars img{
+        left: 0;
+    }
+    .top .stars p{
+        left: 0;
+    }
+    .top .stars .reviews, .guru, .besttech{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        left: 0;
+        margin-top: 20px;
+       
+    }
+
+    .box-comment{
+        left: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .rodape {
+        position: relative;
+        top: 80px;
+    }
+}
